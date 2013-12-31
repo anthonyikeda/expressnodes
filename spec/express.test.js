@@ -12,7 +12,8 @@ describe('express rest api server', function() {
       .send({ name: 'John', email: 'john@gmail.com'})
       .end(function(e,res) {
         expect(e).to.eql(null)
-        expect(res.body.length).to.eql(24)
+        expect(res.body.length).to.eql(1)
+        expect(res.body[0]._id.length).to.eql(24)
         id = res.body[0]._id
         done()
       })
