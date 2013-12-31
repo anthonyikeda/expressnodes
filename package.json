@@ -1,0 +1,47 @@
+{
+  "name" : "express-server",
+  "preferGlobal" : true,
+  "version" : "0.0.1",
+  "author" : "Anthony Ikeda <anthony.ikeda@gmail.com>",
+  "description" : "First attempt at a node.js project creating REST APIs",
+  "contributors" : [],
+  "bin" : {
+    "http-server": "./bin/http-server"
+  },
+  "scripts" : {
+    "start": "node ./bin/http-server",
+    "test": "make test",
+    "predeploy": "echo this will be run before deploying the app",
+    "postdeploy": "echo This will be run after deploying the app",
+  },
+  "main": "./lib/http-server",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anthonyikeda/express.git"
+  },
+  "keywords": [
+    "proto",
+    "REST",
+    "API"
+  ],
+  "dependencies": {
+    "mocha" : "*",
+    "expect.js" : "*",
+    "superagent" : "*",
+    "express" : "*",
+    "mongoskin" : "*"
+  },
+  "analyze" : false,
+  "devDependencies": {},
+  "bundleDependencies" : [
+    "expect.js",
+    "superagent",
+    "express",
+    "mongoskin"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.6"
+  }
+}
+
