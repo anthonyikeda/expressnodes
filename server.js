@@ -11,6 +11,7 @@ app.use(express.bodyParser());
 
 app.get('/account/:accountId/campaigns', function(req, res) {
   scapi.listCampaigns(req.params.accountId);
+  res.send("Hello");
 });
 
 console.log(process.env.NODE_ENV);
